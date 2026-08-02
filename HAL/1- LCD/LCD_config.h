@@ -15,12 +15,12 @@
 /* ========================================================================= */
 
 /* Data Port Options: PORT_A, PORT_B, PORT_C, PORT_D */
-#define LCD_DATA_PORT       PORT_C
+#define LCD_DATA_PORT       PORT_A
 
 /* Control Port Options: PORT_A, PORT_B, PORT_C, PORT_D */
-#define LCD_CTRL_PORT       PORT_D
+#define LCD_CTRL_PORT       PORT_B
 
-/* Control Pins Options: PIN0 -> PIN7 */
+/* Control Pins Options: PIN0 -> PIN2 */
 #define LCD_RS_PIN          PIN0
 #define LCD_RW_PIN          PIN1
 #define LCD_EN_PIN          PIN2
