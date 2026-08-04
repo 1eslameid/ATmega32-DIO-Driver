@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* Author ................. : Eslam Eid                                       */
-/* File Name .............. : ADC INTERFACE FILE                              */
+/* File Name .............. : ADC INTERFACE FILE                             */
 /* Version ................ : V1.0                                            */
 /* Target MCU ............. : ATmega32                                        */
 /******************************************************************************/
@@ -9,7 +9,7 @@
 
 #include "STD_TYPES.h"
 
-/* ADC Channel Definitions */
+/* ADC Channel  */
 #define ADC_CHANNEL0    0
 #define ADC_CHANNEL1    1
 #define ADC_CHANNEL2    2
@@ -19,16 +19,17 @@
 #define ADC_CHANNEL6    6
 #define ADC_CHANNEL7    7
 
-/* Driver APIs */
+/************************/
+
 void ADC_voidInit(void);
 void ADC_voidEnable(void);
 void ADC_voidDisable(void);
 void ADC_voidStartConversion(u8 u8Channel);
 
-/* Synchronous Read Function (Polling) */
+/* Synchronous Read FunctioN */
 u16  ADC_u16ReadSynchronous(u8 u8Channel);
 
-/* Asynchronous Read Function (Interrupt-Based) */
+/* Asynchronous Read Function */
 void ADC_voidReadAsynchronous(u8 u8Channel, pf pfNotificationFunc);
 
 void ADC_voidInterruptEnable(void);
