@@ -6,13 +6,14 @@
 /* Target MCU ............. : ATmega32                                        */
 /******************************************************************************/
 
+
 #ifndef STD_TYPES_H
 #define STD_TYPES_H
 
 /* ============================================================================================== */
 /*                                      Standard Data Types                                       */
 /* ============================================================================================== */
-
+typedef void (*pf)(void);          // pointer to function
 typedef unsigned char        u8;   /* 8-bit Unsigned  : 0 to 255                                 */
 typedef unsigned short int   u16;  /* 16-bit Unsigned : 0 to 65,535                              */
 typedef unsigned long int    u32;  /* 32-bit Unsigned : 0 to 4,294,967,295                      */
@@ -26,8 +27,11 @@ typedef signed long long     s64;  /* 64-bit Signed                             
 typedef float                f32;  /* 32-bit Single Precision Floating Point                     */
 typedef double               f64;  /* 64-bit Double Precision Floating Point                     */
 
+#define NULL                 ((void*)0)
 /* ============================================================================================== */
 /*                                      Standard Definitions                                      */
 /* ============================================================================================== */
+
+
 
 #endif /* STD_TYPES_H */

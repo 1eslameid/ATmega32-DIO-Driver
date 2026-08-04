@@ -29,10 +29,10 @@
 void LCD_voidInit(void)
 {
     /* 1. Set Pins Direction to OUTPUT */
-    DIO_voidSetPortDirection(LCD_DATA_PORT, PORT_OUTPUT);
-    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_RS_PIN, PIN_OUTPUT);
-    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_RW_PIN, PIN_OUTPUT);
-    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_EN_PIN, PIN_OUTPUT);
+    DIO_voidSetPortDirection(LCD_DATA_PORT, OUTPUT);
+    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_RS_PIN, OUTPUT);
+    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_RW_PIN, OUTPUT);
+    DIO_voidSetPinDirection(LCD_CTRL_PORT, LCD_EN_PIN, OUTPUT);
 
     /* 2. Initialization Sequence */
     _delay_ms(30);

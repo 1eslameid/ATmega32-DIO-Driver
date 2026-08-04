@@ -15,7 +15,7 @@
 /* ========================================================================= */
 
 /* Data Port Options: PORT_A, PORT_B, PORT_C, PORT_D */
-#define LCD_DATA_PORT       PORT_A
+#define LCD_DATA_PORT       PORT_D
 
 /* Control Port Options: PORT_A, PORT_B, PORT_C, PORT_D */
 #define LCD_CTRL_PORT       PORT_B
